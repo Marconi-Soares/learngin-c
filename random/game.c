@@ -19,19 +19,21 @@ int main(void)
         printf("Enter a number: ");
         scanf("%d", &guess);
 
-        if (guess > answer)
+        if (guess > answer) 
         {
             printf("Too hight...\n");
-                guesses++;
-        }
-        else
+            guesses++;
+        } 
+        else 
         {
             printf("Too low...\n");
             guesses++;
         }
     } while (guess != answer);
+
     printf("Congrats, you won!\n");
     printf("Attempts: %d\n", guesses);
+
     return 0;
 
 }
